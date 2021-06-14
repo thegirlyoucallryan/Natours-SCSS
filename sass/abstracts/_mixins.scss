@@ -1,0 +1,8 @@
+@mixin clearfix{//appends psuedo elem after the element to append the floats
+    &::after{
+        content: '';//needs content to appear on page but we dont want to see it so its empty string;
+        display: table;
+        clear:both; //clears both float left or float right;
+
+    }
+}

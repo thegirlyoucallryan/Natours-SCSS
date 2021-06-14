@@ -1,0 +1,55 @@
+.row{
+    max-width: $grid-width;//if view point is smaller it will fill 100 percent of available space;
+    color: $linear-two;
+    margin: 0 auto; //centers block element ; auto figures out l/r margins and theyll be even;
+    margin-bottom: $gutter-vertical;
+
+
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+//^ starts with col - dynamically selects all matching//* would select anything containing col-//$ends with//
+    [class^="col-"]{
+        
+        float: left;
+        height: 50px;
+        
+
+        &:not(:last-child){
+            margin-right: $horiz-gutter;
+        }
+    }
+
+    .col-1-2{
+        width: calc((100% - #{$horiz-gutter})/2);
+       
+    }
+
+    .col-1-3{
+        width: calc((100% - 2 * #{$horiz-gutter})/3);
+       
+
+    }
+
+    .col-2-3{
+        width: calc(2 * ((100% - 2 * #{$horiz-gutter}) /3) + #{$horiz-gutter});
+
+    }
+    .col-1-4{
+        width: calc((100% - 2 *   #{$horiz-gutter})/4);
+       
+
+    }
+    .col-2-4{
+        width: calc(2 * ((100% - 2 *  #{$horiz-gutter}) / 4.7) + #{$horiz-gutter});
+    }
+
+    .col-3-4{
+        width: calc(3* ((100% - 2 *   #{$horiz-gutter})/4) + #{$horiz-gutter});
+    }
+
+}
