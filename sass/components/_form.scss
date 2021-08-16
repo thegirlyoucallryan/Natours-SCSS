@@ -6,6 +6,8 @@
     }
 
 
+    
+
     &__input{
        
         font-size: 1.5rem;
@@ -54,6 +56,13 @@
         display: inline-block;
         width: 45%;
 
+        
+        @include respond(tab-land){
+            width: 100%;
+            margin-bottom: 2rem
+         
+         }
+
     }
 
 
@@ -74,6 +83,7 @@
         position: absolute;
         left: 0;
         top: -.4rem;
+        
 
         &::after{
             content: "";
@@ -97,6 +107,12 @@
    &-button{
        background-color: darken( $linear-one, 30%);
        border: 1px solid $linear-one;
+       
+       @include respond(tab-land){
+        width: 60%;
+        margin-bottom: 10rem;
+     
+     }
    }
 }
 

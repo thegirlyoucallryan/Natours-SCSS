@@ -6,6 +6,15 @@
     box-shadow: 0 1.4rem 4rem rgba($black, .15);
     border-radius: 2px;
     transition: transform .3s;
+
+    
+    @include respond(tab-port){
+       margin-bottom: 3rem;
+       padding: 1.6rem;
+        
+       
+
+     }
    
 
 
@@ -13,10 +22,6 @@
         // color: linear-gradient(to right, $linear-one, $linear-two);
         color:darken($linear-one, 20%);
         margin-left: -30px;
-        
-        
-     
-
 
     }
 

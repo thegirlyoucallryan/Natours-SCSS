@@ -5,7 +5,7 @@ body{
     /* font-size: 16px; */
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 3rem;
+ 
     
 
 }
@@ -17,6 +17,8 @@ body{
     /*to get rid of animatn shake use backface-visibility on  entire element;*/
     backface-visibility: hidden;
 
+    
+
     &--main{
         display: block;
         font: 500;
@@ -24,7 +26,17 @@ body{
         animation-name: moveInRight;
         animation-duration: 2.5s;
         animation-timing-function: ease-out;
-    
+
+        @include respond(tab-port){
+           letter-spacing: 1rem;
+           font-family:  3rem;
+
+        }
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-family:  2rem;
+ 
+         }
     }
     
     &--sub{
@@ -51,6 +63,13 @@ body{
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
+
+    @include respond(tab-port){
+       font-size: 3rem;
+    }
+    @include respond(tab-port){
+       font-size: 2.4rem;
+    }
    
 
     &:hover{

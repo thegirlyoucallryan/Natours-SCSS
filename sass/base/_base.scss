@@ -8,11 +8,46 @@
 html{
 
     //defines what 1 rem is
-    font-size: 62.5%;
+    font-size: 62.5%; //1 rem = 10px; 10/16px = 62.5%
+
+  
+
+    // @include respond(phone){
+    //     font-size: 40%; //
+    // }
+  
+
+    @include respond(tab-land){
+        font-size: 56.25%; //1rem = 9px; 9/16
+    }
+    @include respond(tab-port){//order here matters smaller screen latter
+        font-size: 50%; // 1rem = 8px; 8/16 = 50%
+    }
+    @include respond(desktop){
+        font-size: 59%;
+    }
+    @include respond(xlarge){
+        font-size: 75%;
+    }
+    @include respond(tab-port){//order here matters smaller screen latter
+        font-size: 50%; // 1rem = 8px; 8/16 = 50%
+    }
+   
+
+    @include respond(phone){
+        font-size: 37.5%; //1rem = 9px; 9/16
+    }
+    
+ 
 }
 
 body{
  box-sizing: border-box;
+ padding: 3rem;
+
+ @include respond(tab-port){
+     padding: 0;
+ }
     
 
 }

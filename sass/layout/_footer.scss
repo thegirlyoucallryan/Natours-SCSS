@@ -3,7 +3,14 @@
     padding: 10rem 0;
     font-size: 1.4rem;
 
+    @include respond(tab-port){
+        padding: 4rem;
+        right: 4rem;
+        text-align: center;
+        
+       
 
+     }
 
 
 
@@ -16,6 +23,13 @@
         margin-right: auto;
         top: 10rem;
         margin-bottom: 8rem;
+        
+    @include respond(tab-port){
+        margin-bottom: 3rem;
+        
+       
+
+     }
         
 
     }
@@ -43,6 +57,13 @@
        border-top: 1px solid $white;
        display: inline-block;// will cut border top to the length of the li -- inline block only occupies the width that it needs
       padding: 2rem;
+
+      @include respond(tab-port){
+       float: none;
+       width: 100%;
+       
+
+     }
     }
 
     &__link{
@@ -52,6 +73,15 @@
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
+            
+    @include respond(tab-port){
+        padding: 2rem;
+       
+        text-align: center;
+        
+       
+
+     }
             
         }
 

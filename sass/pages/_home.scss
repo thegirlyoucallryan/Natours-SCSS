@@ -1,20 +1,29 @@
 .section-about {
-    height: 130vh;
+    
     padding: 25rem;
-    // background:  linear-gradient(to right, rgba(232, 243, 231, 0.795), #ffffff);
-    // clip-path: circle(80% at 70% 45%);
+   
+    
+    @include respond(tab-port){
+        padding: 20rem 0;
+        margin-bottom: 19rem;
+        
+       
+        
+       
+
+     }
    
 }
 
 
 .section-features{
     
-    margin-top: -11rem;
+    margin-top: -1rem;
     padding: 20rem 0;
     background-image: linear-gradient(to right bottom,
         $linear-one, $linear-two), url(../img/nat-4.jpg);
     background-size: cover;
-    height: 100vh;
+    
     transform: skewY(-7deg);
 
 
@@ -33,6 +42,16 @@
     // clip-path: circle(80% at 30% 45%);
     position: relative;
     z-index: -2;
+
+    
+    @include respond(tab-port){
+        padding: 15rem 0 10rem 0;
+        margin-bottom: 5rem;
+
+        
+       
+
+     }
 
    
 }
@@ -54,10 +73,46 @@
     height: 50rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($black, .25) ;
+   
+
+    
+    @include respond(tab-land){
+        background-image: linear-gradient(110deg, rgba($white, .9) 0%,
+        rgba($white, .99) 60%, rgba(199, 20, 20, 0.11) 50%), url(../img/nat-10.jpg);
+        background-size: cover;
+    
+        
+       
+
+     }
+     @include respond(tab-port){
+        background-image: linear-gradient(110deg, rgba($white, .9) 0%,
+        rgba($white, .99) 100%), url(../img/nat-10.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 52rem
+    
+        
+       
+
+     }
 
     &__form{
         width: 50%;
-        padding: 6rem;
+        padding: 3rem;
+
+
+        @include respond(tab-land){
+           width: 60%;
+        
+        
+        }
+        
+        @include respond(tab-port){
+            width: 100%;
+         
+         }
+        
     }
 
 }

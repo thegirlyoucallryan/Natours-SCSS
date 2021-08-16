@@ -6,3 +6,40 @@
 
     }
 }
+
+//media query manager
+
+
+// 0-600px: phone /phone
+
+// 600 - 900px: tablet portrait/tab-port
+
+// 900 - 1200px: tablet landscape/tab-land
+
+// 1200 - 1800px: normal styles
+
+// 1800px + : big desktop/large
+
+// 1em = 16px 
+// ex. 600/16 = 37.5
+
+
+
+    
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media(max-width:37.5em) {@content};
+    }
+    @if $breakpoint == tab-port {
+        @media(max-width: 56.25em) {@content};
+    }
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em) {@content};
+    }
+    @if $breakpoint == desktop {
+        @media(max-width: 93.75em) {@content};
+    }
+    @if $breakpoint == xlarge {
+        @media(min-width: 112.5) {@content};
+    }
+}

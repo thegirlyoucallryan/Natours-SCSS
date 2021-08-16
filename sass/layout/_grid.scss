@@ -2,13 +2,27 @@
     max-width: $grid-width;//if view point is smaller it will fill 100 percent of available space;
     color: $linear-two;
     margin: 0 auto; //centers block element ; auto figures out l/r margins and theyll be even;
-    margin-bottom: $gutter-vertical;
+    
 
 
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+
+        @include respond(tab-port){
+            margin-bottom: $gutter-vertical-small;
+           
+ 
+         }
+         
     }
+    @include respond(tab-port){
+        max-width: 59rem;
+        padding: 3rem 3rem;
+       
+
+     }
+
 
     @include clearfix;
 
@@ -16,12 +30,19 @@
     [class^="col-"]{
         
         float: left;
-        height: 50px;
+        
         
 
         &:not(:last-child){
             margin-right: $horiz-gutter;
         }
+
+           
+     
+        @include respond(tab-port){
+            width: 100% !important;
+ 
+         }
     }
 
     .col-1-2{
