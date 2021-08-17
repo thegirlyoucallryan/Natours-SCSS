@@ -146,23 +146,27 @@ body {
   padding: 25rem; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0;
-      margin-bottom: 19rem; } }
+      padding: 20rem 0; } }
 
 .section-features {
-  margin-top: -1rem;
+  margin-top: 1rem;
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, #7bb89291, #a3375279), url(../img/nat-4.jpg);
   background-size: cover;
+  position: relative;
+  z-index: -100;
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      margin-top: 10rem; } }
 
 .section-tours {
   height: 130vh;
   padding: 25rem 0 50rem 0;
-  margin-top: -12rem;
-  background: linear-gradient(to right, #ffffff, rgba(236, 243, 237, 0.795));
+  margin-top: -32rem;
+  background: linear-gradient(to right, #c3c3c3, rgba(101, 187, 114, 0.795));
   position: relative;
   z-index: -2; }
   @media (max-width: 56.25em) {
@@ -355,11 +359,11 @@ body {
     box-shadow: 0 1.5rem 4em rgba(35, 35, 35, 0.4);
     border-radius: 2px;
     position: absolute;
-    outline-offset: 1.2rem; }
+    outline-offset: 1.2rem;
+    z-index: 1; }
     @media (max-width: 56.25em) {
       .composition__photo {
-        margin-top: 10rem;
-        margin-bottom: 80rem; } }
+        margin-top: 10rem; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }

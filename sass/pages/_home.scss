@@ -5,7 +5,7 @@
     
     @include respond(tab-port){
         padding: 20rem 0;
-        margin-bottom: 19rem;
+      
         
        
         
@@ -18,11 +18,13 @@
 
 .section-features{
     
-    margin-top: -1rem;
+    margin-top: 1rem;
     padding: 20rem 0;
     background-image: linear-gradient(to right bottom,
         $linear-one, $linear-two), url(../img/nat-4.jpg);
     background-size: cover;
+    position: relative;
+    z-index: -100;
     
     transform: skewY(-7deg);
 
@@ -30,6 +32,13 @@
     & > * {
         transform: skewY(7deg)
     };
+           
+    @include respond(tab-port){
+        margin-top: 10rem;
+       
+       
+
+     }
 
     
 }
@@ -37,8 +46,8 @@
 .section-tours{
     height: 130vh;
     padding: 25rem 0 50rem 0;
-    margin-top: -12rem;
-    background:  linear-gradient(to right, #ffffff, rgba(236, 243, 237, 0.795));
+    margin-top:-32rem;
+    background:  linear-gradient(to right, #c3c3c3, rgba(101, 187, 114, 0.795));
     // clip-path: circle(80% at 30% 45%);
     position: relative;
     z-index: -2;
