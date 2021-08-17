@@ -10,29 +10,79 @@
         position: absolute;
         outline-offset: 1.2rem;
         z-index: 1;
-        
+        @include respond(desktop){
+            width: 85%;
+            
+            
+     
+          }
+        @include respond(tab-land){
+           width: 75%;
+           
+           
+    
+         }
+
+    
     @include respond(tab-port){
         margin-top: 10rem;
+        width: 55%;
        
        
 
      }
+
     
     
 
     &--p1{
         left: 0;
         top: -2rem;
+        @include respond(desktop){
+           left: 25rem;
+            
+            
+     
+          }
+        @include respond(tab-land){
+           left: 34%;
+            
+            
+     
+          }
+ 
+        
 
     }
     &--p2{
         right: -2rem;
         top: 3rem;
+        @include respond(desktop){
+            left: -3rem;
+      
+           }
+
+        @include respond(tab-land){
+            left: -14%
+       
+           }
+
 
     }
     &--p3{
         left: 20%;
         top: 12rem;
+        @include respond(desktop){
+            left: 13rem;
+            top: 17rem
+       
+           }
+
+        @include respond(tab-land){
+            left: 15%;
+            top: 12rem;
+          
+           }
 
     }
     &:hover {

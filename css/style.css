@@ -173,6 +173,9 @@ body {
     .section-tours {
       padding: 15rem 0 10rem 0;
       margin-bottom: 5rem; } }
+  @media (max-width: 75em) {
+    .section-tours {
+      padding: 0; } }
 
 .whitespace {
   height: 100rem; }
@@ -361,18 +364,45 @@ body {
     position: absolute;
     outline-offset: 1.2rem;
     z-index: 1; }
+    @media (max-width: 93.75em) {
+      .composition__photo {
+        width: 85%; } }
+    @media (max-width: 75em) {
+      .composition__photo {
+        width: 75%; } }
     @media (max-width: 56.25em) {
       .composition__photo {
-        margin-top: 10rem; } }
+        margin-top: 10rem;
+        width: 55%; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+      @media (max-width: 93.75em) {
+        .composition__photo--p1 {
+          left: 25rem; } }
+      @media (max-width: 75em) {
+        .composition__photo--p1 {
+          left: 34%; } }
     .composition__photo--p2 {
       right: -2rem;
       top: 3rem; }
+      @media (max-width: 93.75em) {
+        .composition__photo--p2 {
+          left: -3rem; } }
+      @media (max-width: 75em) {
+        .composition__photo--p2 {
+          left: -14%; } }
     .composition__photo--p3 {
       left: 20%;
       top: 12rem; }
+      @media (max-width: 93.75em) {
+        .composition__photo--p3 {
+          left: 13rem;
+          top: 17rem; } }
+      @media (max-width: 75em) {
+        .composition__photo--p3 {
+          left: 15%;
+          top: 12rem; } }
     .composition__photo:hover {
       transform: scale(1.5) translateY(3);
       box-shadow: 0 2.5rem 4rem rgba(35, 35, 35, 0.8);
